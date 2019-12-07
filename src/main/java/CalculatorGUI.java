@@ -74,11 +74,11 @@ class CalculatorGUI extends JFrame implements ActionListener {
             //</editor-fold>
 
          //<editor-fold desc="spinners">
-        SpinnerModel smMR = new SpinnerNumberModel(2, 2, 100, 1);
+        SpinnerModel smMR = new SpinnerNumberModel(2, 2, 10000, 1);
         JSpinner sMR = new JSpinner(smMR);
-        SpinnerModel smSS = new SpinnerNumberModel(2, 2, 100, 1);
+        SpinnerModel smSS = new SpinnerNumberModel(2, 2, 10000, 1);
         JSpinner sSS = new JSpinner(smSS);
-        SpinnerModel smFermat = new SpinnerNumberModel(2, 2, 100, 1);
+        SpinnerModel smFermat = new SpinnerNumberModel(2, 2, 10000, 1);
         JSpinner sFermat = new JSpinner(smFermat);
         sMR.addChangeListener(e -> {
             valueMR = (Integer) ((JSpinner)e.getSource()).getValue();
@@ -315,8 +315,8 @@ class CalculatorGUI extends JFrame implements ActionListener {
                 lAKS.setText(output);
                 flagChecker(flag);
             }
-        } catch (NullPointerException nullException) {
-            labelText.setText("You need to provide a number first");
+        } catch (Exception nullException) {
+            labelText.setText("You need to provide a valid number first");
         }
 
             // set the value of text
