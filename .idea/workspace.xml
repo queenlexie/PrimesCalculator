@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d14ec6b9-52f5-4f85-92ed-3ab4b8f80319" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +29,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1TpzbJKcR5AC4PUBibcdLTfhCWK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="right" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE" value="left" />
@@ -38,18 +42,6 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.CalculatorGUI">
     <configuration name="CalculatorGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -102,12 +94,24 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.CalculatorGUI" />
-        <item itemvalue="JUnit.CalculatorTests.shouldReturnPrimeForFermat" />
         <item itemvalue="JUnit.CalculatorTests.shouldReturnZeroForFermatPseudoprimesTest" />
         <item itemvalue="JUnit.CalculatorTests.shouldReturnOneForFermatPseudoprimesTest" />
+        <item itemvalue="JUnit.CalculatorTests.shouldReturnPrimeForFermat" />
         <item itemvalue="JUnit.CalculatorTests.shouldReturnPseudoprimeForFermatPseudoprimesTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -127,14 +131,34 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+  <component name="WindowStateProjectService">
+    <state width="1557" height="178" key="GridCell.Tab.0.bottom" timestamp="1576668809137">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="178" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1576668809137" />
+    <state width="1557" height="178" key="GridCell.Tab.0.center" timestamp="1576668809137">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="178" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1576668809137" />
+    <state width="1557" height="178" key="GridCell.Tab.0.left" timestamp="1576668809136">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="178" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1576668809136" />
+    <state width="1557" height="178" key="GridCell.Tab.0.right" timestamp="1576668809137">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="178" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1576668809137" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PrimesCalculator$CalculatorGUI.ic" NAME="CalculatorGUI Coverage Results" MODIFIED="1574180597548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/PrimesCalculator$CalculatorTests.ic" NAME="CalculatorTests Coverage Results" MODIFIED="1574174827566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/PrimesCalculator$CalculatorGUI.ic" NAME="CalculatorGUI Coverage Results" MODIFIED="1574180597548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

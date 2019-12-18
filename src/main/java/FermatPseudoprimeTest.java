@@ -4,7 +4,7 @@ public class FermatPseudoprimeTest {
 
         // Function to check if
         // the given number is composite
-        static boolean checkcomposite(int n)
+        static boolean checkComposite(int n)
         {
             // Check if there is any divisor of n
             // less than sqrt(n)
@@ -46,20 +46,20 @@ public class FermatPseudoprimeTest {
         }
 
         // Function to check for Fermat Pseudoprime
-        static int Check(int n, int a)
+        static boolean Check(int n, int a)
         {
 
             // If it is composite and
             // satisfy Fermat criterion
-            if (a > 1 && checkcomposite(n)
+            if (a > 1 && checkComposite(n)
                     && power(a, n - 1, n) == 1)
             {
                 //mean it is pseudoprime
-                return 1;
+                return true;
             }
 
             // Else return 0
-            return 0;
+            return false;
         }
 
 

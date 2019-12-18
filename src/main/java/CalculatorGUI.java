@@ -277,12 +277,20 @@ class CalculatorGUI extends JFrame implements ActionListener {
             else if (whatWeGot.equals("Fermat Test")) {
                 b = FermatTest.isPrime(Integer.parseInt(s0), valueFermat);
                 if (b == true) {
-                    output = "Is a Prime Number";
-                    flag++;
-                    // p.revalidate();
+                    b=FermatPseudoprimeTest.Check(Integer.parseInt(s0), valueFermat);
+                            if(b==true){
+                                output = "Is a Pseudoprime";
+                                flag--;
+                            }
+                            else {
+                                output = "Is a Prime Number";
+                                flag++;
+                                // p.revalidate();
+                            }
 
-                } else
+                } else{
                     output = "Is Not a Prime Number";
+                    flag--;}
                 lF.setText(output);
                 flagChecker(flag);
             } else if (whatWeGot.equals("Miller-Rabin Test")) {
