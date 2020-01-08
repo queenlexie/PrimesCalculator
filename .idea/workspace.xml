@@ -15,6 +15,8 @@
       <list>
         <option value="Class" />
         <option value="Interface" />
+        <option value="UML Sequence" />
+        <option value="Work Breakdown Structure" />
       </list>
     </option>
   </component>
@@ -35,13 +37,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultPlantUmlFileTemplate" value="Work Breakdown Structure" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="right" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE" value="left" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="222" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Application.CalculatorGUI">
     <configuration name="CalculatorGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -140,22 +143,34 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1557" height="178" key="GridCell.Tab.0.bottom" timestamp="1576668809137">
+    <state x="392" y="23" key="#Custom_Plugin_Repositories" timestamp="1576670221270">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="178" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1576668809137" />
-    <state width="1557" height="178" key="GridCell.Tab.0.center" timestamp="1576668809137">
+    <state x="392" y="23" key="#Custom_Plugin_Repositories/0.0.1600.860@0.0.1600.860" timestamp="1576670221270" />
+    <state x="580" y="106" key="FileChooserDialogImpl" timestamp="1578472402566">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="178" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1576668809137" />
-    <state width="1557" height="178" key="GridCell.Tab.0.left" timestamp="1576668809136">
+    <state x="580" y="106" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1578472402566" />
+    <state width="1557" height="178" key="GridCell.Tab.0.bottom" timestamp="1577722336891">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="178" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1576668809136" />
-    <state width="1557" height="178" key="GridCell.Tab.0.right" timestamp="1576668809137">
+    <state width="1557" height="178" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1577722336891" />
+    <state width="1557" height="178" key="GridCell.Tab.0.center" timestamp="1577722336891">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="178" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1576668809137" />
+    <state width="1557" height="178" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1577722336891" />
+    <state width="1557" height="178" key="GridCell.Tab.0.left" timestamp="1577722336891">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="178" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1577722336891" />
+    <state width="1557" height="178" key="GridCell.Tab.0.right" timestamp="1577722336891">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="178" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1577722336891" />
+    <state x="213" y="87" key="SettingsEditor" timestamp="1576673205030">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="213" y="87" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1576673205030" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PrimesCalculator$CalculatorTests.ic" NAME="CalculatorTests Coverage Results" MODIFIED="1574174827566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

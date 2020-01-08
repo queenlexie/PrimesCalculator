@@ -2,8 +2,7 @@
 // program demonstrates concept behind AKS
 // algorithm and doesn't implement the actual
 // algorithm (This works only till n = 64)
-
-    class AKSTest implements PrimalityTesting{
+class AKSTest implements PrimalityTesting{
         // array used to store coefficients .
         static long c[] = new long[100];
 
