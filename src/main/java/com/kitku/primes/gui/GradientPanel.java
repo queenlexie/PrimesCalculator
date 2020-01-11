@@ -1,3 +1,5 @@
+package com.kitku.primes.gui;
+
 import javax.swing.*;
 import java.awt.*;
 
