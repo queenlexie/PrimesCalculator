@@ -1,3 +1,9 @@
+package com.kitku.primes.gui;
+
+import com.kitku.primes.tests.*;
+import com.kitku.primes.tests.rng.DefaultRandomIntGenerator;
+import com.kitku.primes.tests.rng.RandomIntGenerator;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -8,6 +14,9 @@ import java.awt.event.ActionListener;
 class CalculatorGUI extends JFrame implements ActionListener {
 
 
+    public static int valueMR;
+    public static int valueFermat;
+    public static int valueSS;
     static JFrame f;
     static JLabel labelText;
     static JLabel labelHello;
@@ -21,20 +30,17 @@ class CalculatorGUI extends JFrame implements ActionListener {
     static JTextField lSS;
     static JTextField lAKS;
     static JLabel spacer;
-
-    int flag=0;
-    public static int valueMR;
-    public static int valueFermat;
-    public static int valueSS;
+    int flag = 0;
+    RandomIntGenerator intGenerator = new DefaultRandomIntGenerator();
     String s0;
     String s1, s2;
-    CalculatorGUI()
-    {
+
+    CalculatorGUI() {
         s0 = s1 = s2 = "";
     }
 
 
-        public static void Action(){
+    public static void Action() {
 
         //<editor-fold desc="panels">
         f = new JFrame("PrimesCalculator");
@@ -62,18 +68,18 @@ class CalculatorGUI extends JFrame implements ActionListener {
         panelSpinnerFermat.setPreferredSize(new Dimension(100, 23));
         JPanel panelSpinnerSS = new JPanel(new BorderLayout());
         panelSpinnerSS.setPreferredSize(new Dimension(100, 23));
-            //</editor-fold>
+        //</editor-fold>
 
-         //<editor-fold desc="labels">
+        //<editor-fold desc="labels">
         labelText = new JLabel("We do not know anything yet :)  ");
-        labelHello=new JLabel("Provide a number to check its primality");
-        labelMR=new JLabel("Choose a random number between 2 and your number - 2:");
-        labelFermat=new JLabel("Choose a number of iterations for this test:");
-        labelSS=new JLabel("Choose a number of iterations for this test:");
-        labelInstructions=new JLabel("Choosing higher value increases probability of correctness");
-            //</editor-fold>
+        labelHello = new JLabel("Provide a number to check its primality");
+        labelMR = new JLabel("Choose a random number between 2 and your number - 2:");
+        labelFermat = new JLabel("Choose a number of iterations for this test:");
+        labelSS = new JLabel("Choose a number of iterations for this test:");
+        labelInstructions = new JLabel("Choosing higher value increases probability of correctness");
+        //</editor-fold>
 
-         //<editor-fold desc="spinners">
+        //<editor-fold desc="spinners">
         SpinnerModel smMR = new SpinnerNumberModel(2, 2, 10000, 1);
         JSpinner sMR = new JSpinner(smMR);
         SpinnerModel smSS = new SpinnerNumberModel(2, 2, 10000, 1);
@@ -81,16 +87,12 @@ class CalculatorGUI extends JFrame implements ActionListener {
         SpinnerModel smFermat = new SpinnerNumberModel(2, 2, 10000, 1);
         JSpinner sFermat = new JSpinner(smFermat);
         sMR.addChangeListener(e -> {
-            valueMR = (Integer) ((JSpinner)e.getSource()).getValue();
+            valueMR = (Integer) ((JSpinner) e.getSource()).getValue();
             //s.setBounds(2, 2, value -2 , 1);
         });
-        sFermat.addChangeListener(e -> {
-                valueFermat = (Integer) ((JSpinner)e.getSource()).getValue();
-            });
-        sSS.addChangeListener(e -> {
-                valueSS = (Integer) ((JSpinner)e.getSource()).getValue();
-            });
-            //</editor-fold>
+        sFermat.addChangeListener(e -> valueFermat = (Integer) ((JSpinner) e.getSource()).getValue());
+        sSS.addChangeListener(e -> valueSS = (Integer) ((JSpinner) e.getSource()).getValue());
+        //</editor-fold>
 
         try {
             // set look and feel
@@ -113,9 +115,9 @@ class CalculatorGUI extends JFrame implements ActionListener {
         lSS.setEditable(false);
         lAKS.setEditable(false);
         lF.setBounds(100, 100, 130, 30);
-            //</editor-fold>
+        //</editor-fold>
 
-            //<editor-fold desc="buttons">
+        //<editor-fold desc="buttons">
         JButton bF, bAKS, bMR, bSS;
         JButton b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, beq, beq1;
         b0 = new JButton("0");
@@ -135,12 +137,12 @@ class CalculatorGUI extends JFrame implements ActionListener {
         bMR = new JButton("Miller-Rabin Test");
         bSS = new JButton("Solovay-Strassen Test");
         bAKS = new JButton("AKS Test");
-            //</editor-fold>
+        //</editor-fold>
 
-       GradientPanel p = new GradientPanel();
-       //p.setLayout(new BoxLayout(p, BoxLayout.Y_AXIS));
+        GradientPanel p = new GradientPanel();
+        //p.setLayout(new BoxLayout(p, BoxLayout.Y_AXIS));
 
-            //<editor-fold desc=" Action Listeners">
+        //<editor-fold desc=" Action Listeners">
         b9.addActionListener(c);
         b8.addActionListener(c);
         b7.addActionListener(c);
@@ -158,9 +160,9 @@ class CalculatorGUI extends JFrame implements ActionListener {
         bAKS.addActionListener(c);
         bMR.addActionListener(c);
         bSS.addActionListener(c);
-            //</editor-fold>
+        //</editor-fold>
 
-            //<editor-fold desc="Adding to panels">
+        //<editor-fold desc="Adding to panels">
         p1.add(b1);
         p1.add(b2);
         p1.add(b3);
@@ -186,13 +188,13 @@ class CalculatorGUI extends JFrame implements ActionListener {
         panelSpinnerMR.add(sMR);
         panelSpinnerFermat.add(sFermat);
         panelSpinnerSS.add(sSS);
-            //</editor-fold>
+        //</editor-fold>
 
-            //<editor-fold desc="Adding other panels to main panel ">
+        //<editor-fold desc="Adding other panels to main panel ">
         p.add(labelHello);
         //p.add(new JSeparator(SwingConstants.Y_AXIS));
         p.add(p1);
-        p.add(spacer = new JLabel(" "),"span, grow");
+        p.add(spacer = new JLabel(" "), "span, grow");
         p.add(new JSeparator(SwingConstants.HORIZONTAL));
         p.add(pNumber);
         //p.add(spacer = new JLabel(" "),"span, grow");
@@ -204,7 +206,7 @@ class CalculatorGUI extends JFrame implements ActionListener {
         p.add(labelFermat);
         p.add(panelSpinnerFermat);
         p.add(pFermat);
-        p.add(spacer = new JLabel(" "),"span, grow");
+        p.add(spacer = new JLabel(" "), "span, grow");
         p.add(new JSeparator(SwingConstants.HORIZONTAL));
         //p.add(s);
         p.add(labelSS);
@@ -216,9 +218,9 @@ class CalculatorGUI extends JFrame implements ActionListener {
         p.add(pMR);
         p.add(new JSeparator());
         p.add(labelText);
-            //</editor-fold>
+        //</editor-fold>
 
-            //<editor-fold desc="Frame">
+        //<editor-fold desc="Frame">
         f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         //f.setLayout(new BoxLayout(f, BoxLayout.Y_AXIS));
 /*
@@ -232,14 +234,18 @@ class CalculatorGUI extends JFrame implements ActionListener {
         f.add(p);
         f.setSize(363, 530);
         f.show();
-            //</editor-fold>
+        //</editor-fold>
     }
-    public void actionPerformed(ActionEvent e)
-    {
+
+    public static void main(String[] args) {
+        Action();
+    }
+
+    public void actionPerformed(ActionEvent e) {
         String whatWeGot = e.getActionCommand();
         //Integer.parseInt( s.getSpinner().getValue().toString())
         String output;
-        boolean b = false;
+        boolean b;
 
         try {
             // if the value is a number
@@ -275,28 +281,28 @@ class CalculatorGUI extends JFrame implements ActionListener {
             //int flag = 0;
             // store the value in 1st
             else if (whatWeGot.equals("Fermat Test")) {
-                b = FermatTest.isPrime(Integer.parseInt(s0), valueFermat);
-                if (b == true) {
-                    b=FermatPseudoprimeTest.Check(Integer.parseInt(s0), valueFermat);
-                            if(b==true){
-                                output = "Is a Pseudoprime";
-                                flag--;
-                            }
-                            else {
-                                output = "Is a Prime Number";
-                                flag++;
-                                // p.revalidate();
-                            }
+                b = new FermatTest(valueFermat, intGenerator).isPrime(Integer.parseInt(s0));
+                if (b) {
+                    b = FermatPseudoPrimeTest.isPseudoPrime(Integer.parseInt(s0), valueFermat);
+                    if (b) {
+                        output = "Is a Pseudoprime";
+                        flag--;
+                    } else {
+                        output = "Is a Prime Number";
+                        flag++;
+                        // p.revalidate();
+                    }
 
-                } else{
+                } else {
                     output = "Is Not a Prime Number";
-                    flag--;}
+                    flag--;
+                }
                 lF.setText(output);
                 flagChecker(flag);
             } else if (whatWeGot.equals("Miller-Rabin Test")) {
 
-                b = MillerRabinTest.isPrime(Integer.parseInt(s0), valueMR);
-                if (b == true) {
+                b = new MillerRabinTest(valueMR, intGenerator).isPrime(Integer.parseInt(s0));
+                if (b) {
                     flag++;
                     output = "Is a Prime Number";
                 } else
@@ -305,8 +311,8 @@ class CalculatorGUI extends JFrame implements ActionListener {
                 flagChecker(flag);
 
             } else if (whatWeGot.equals("Solovay-Strassen Test")) {
-                b = SolovayStrassenTest.SSIsPrime(Integer.parseInt(s0), valueSS);
-                if (b == true) {
+                b = new SolovayStrassenTest(valueSS, intGenerator).isPrime(Integer.parseInt(s0));
+                if (b) {
                     output = "Is a Prime Number";
                     flag++;
                 } else
@@ -314,8 +320,8 @@ class CalculatorGUI extends JFrame implements ActionListener {
                 lSS.setText(output);
                 flagChecker(flag);
             } else {
-                b = AKSTest.isPrime(Integer.parseInt(s0));
-                if (b == true) {
+                b = new AKSTest().isPrime(Integer.parseInt(s0));
+                if (b) {
                     output = " Is a Prime Number";
                     flag++;
                 } else
@@ -327,29 +333,26 @@ class CalculatorGUI extends JFrame implements ActionListener {
             labelText.setText("You need to provide a valid number first");
         }
 
-            // set the value of text
-            //lF.setText(s0 + s1 + s2 + "=" + te);
+        // set the value of text
+        //lF.setText(s0 + s1 + s2 + "=" + te);
 
-            // convert it to string
-            //s0 = Double.toString(output);
-            whatWeGot = s1 = s2 = "";
-        }
-        public void flagChecker(int flag){
-            if (flag == 0)
-                labelText.setText("Your number probably is a composite number");
-            else if (flag == 1)
-                labelText.setText("Your number maybe is a prime number");
-            else if (flag == 2)
-                labelText.setText("It is hard to say whether your number is prime or not");
-            else if (flag == 3)
-                labelText.setText("Your number probably is a prime number");
-            else if (flag == 4)
-                labelText.setText("Your number is a prime number");
-            else
-                labelText.setText("ERROR");
-        }
-    public static void main(String args[]) {
-        Action();
+        // convert it to string
+        //s0 = Double.toString(output);
+        whatWeGot = s1 = s2 = "";
     }
 
+    public void flagChecker(int flag) {
+        if (flag == 0)
+            labelText.setText("Your number probably is a composite number");
+        else if (flag == 1)
+            labelText.setText("Your number maybe is a prime number");
+        else if (flag == 2)
+            labelText.setText("It is hard to say whether your number is prime or not");
+        else if (flag == 3)
+            labelText.setText("Your number probably is a prime number");
+        else if (flag == 4)
+            labelText.setText("Your number is a prime number");
+        else
+            labelText.setText("ERROR");
     }
+}

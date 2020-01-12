@@ -13,14 +13,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
-        <option value="Interface" />
         <option value="UML Sequence" />
         <option value="Work Breakdown Structure" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -38,6 +44,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultPlantUmlFileTemplate" value="Work Breakdown Structure" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="382" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="382" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="382" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="382" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="382" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="382" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="382" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="382" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="right" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE" value="left" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="222" />
@@ -45,6 +67,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alessandra\.git\PrimesCalculator\src\main\java\com\kitku\primes\gui" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.CalculatorGUI">
     <configuration name="CalculatorGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -147,30 +174,54 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="23" key="#Custom_Plugin_Repositories/0.0.1600.860@0.0.1600.860" timestamp="1576670221270" />
+    <state x="605" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1578759780185">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="605" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1578759780185" />
+    <state x="495" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578757929527">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="495" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1578757929527" />
+    <state x="92" y="92" width="1416" height="676" key="DiffContextDialog" timestamp="1578755941375">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="92" y="92" width="1416" height="676" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1578755941375" />
     <state x="580" y="106" key="FileChooserDialogImpl" timestamp="1578472402566">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="106" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1578472402566" />
-    <state width="1557" height="178" key="GridCell.Tab.0.bottom" timestamp="1577722336891">
+    <state width="1557" height="178" key="GridCell.Tab.0.bottom" timestamp="1578762557617">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="178" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1577722336891" />
-    <state width="1557" height="178" key="GridCell.Tab.0.center" timestamp="1577722336891">
+    <state width="1557" height="178" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1578762557617" />
+    <state width="1557" height="178" key="GridCell.Tab.0.center" timestamp="1578762557601">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="178" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1577722336891" />
-    <state width="1557" height="178" key="GridCell.Tab.0.left" timestamp="1577722336891">
+    <state width="1557" height="178" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1578762557601" />
+    <state width="1557" height="178" key="GridCell.Tab.0.left" timestamp="1578762557601">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="178" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1577722336891" />
-    <state width="1557" height="178" key="GridCell.Tab.0.right" timestamp="1577722336891">
+    <state width="1557" height="178" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1578762557601" />
+    <state width="1557" height="178" key="GridCell.Tab.0.right" timestamp="1578762557601">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="178" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1577722336891" />
+    <state width="1557" height="178" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1578762557601" />
     <state x="213" y="87" key="SettingsEditor" timestamp="1576673205030">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="213" y="87" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1576673205030" />
+    <state x="571" y="163" key="VcsDiffUtil.ChangesDialog" timestamp="1578755927601">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="571" y="163" key="VcsDiffUtil.ChangesDialog/0.0.1600.860@0.0.1600.860" timestamp="1578755927601" />
+    <state x="182" y="49" key="new project wizard" timestamp="1578667048026">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="182" y="49" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1578667048026" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1578760395165">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1578760395165" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PrimesCalculator$CalculatorTests.ic" NAME="CalculatorTests Coverage Results" MODIFIED="1574174827566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -4,7 +4,7 @@
 !define unique(x) <color:green>x</color>
 !define not_null(x) <u>x</u>
 
-       class AKSTest {
+       class com.kitku.primes.tests.AKSTest {
         static long c[] = new long[100];.
                 static void coef(int n);
                 static boolean isPrime(int n);

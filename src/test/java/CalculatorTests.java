@@ -1,10 +1,11 @@
 
+import com.kitku.primes.tests.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculatorTests {
-    //RealAKSTest mockTestAKS = mock(RealAKSTest.class);
+    //com.kitku.primes.tests.RealAKSTest mockTestAKS = mock(com.kitku.primes.tests.RealAKSTest.class);
     //private Calculator calc = new Calculator(mockTestAKS);
 /*
     @Test
@@ -59,8 +60,8 @@ public class CalculatorTests {
         assertFalse(MillerRabinTest.isPrime(561, 10));
     }
     @Test
-    public void shouldReturnOneForFermatPseudoprimesTest() { assertEquals(1, FermatPseudoprimeTest.Check(561, 2)); }
+    public void shouldReturnOneForFermatPseudoprimesTest() { assertEquals(1, FermatPseudoPrimeTest.Check(561, 2)); }
     @Test
-    public void shouldReturnZeroForFermatPseudoprimesTest() { assertEquals(0, FermatPseudoprimeTest.Check(13, 2)); }
+    public void shouldReturnZeroForFermatPseudoprimesTest() { assertEquals(0, FermatPseudoPrimeTest.Check(13, 2)); }
 
 }
