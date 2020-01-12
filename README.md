@@ -1,0 +1,2 @@
+# PrimesCalculator
+![DiagramUML](diagram.png)
