@@ -44,6 +44,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultPlantUmlFileTemplate" value="Work Breakdown Structure" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="382" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="382" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="382" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="382" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="382" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="382" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="382" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="382" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="right" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE" value="left" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="222" />
@@ -174,22 +190,22 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="106" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1578472402566" />
-    <state width="1557" height="178" key="GridCell.Tab.0.bottom" timestamp="1578762475324">
+    <state width="1557" height="178" key="GridCell.Tab.0.bottom" timestamp="1578762557617">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="178" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1578762475324" />
-    <state width="1557" height="178" key="GridCell.Tab.0.center" timestamp="1578762475324">
+    <state width="1557" height="178" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1578762557617" />
+    <state width="1557" height="178" key="GridCell.Tab.0.center" timestamp="1578762557601">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="178" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1578762475324" />
-    <state width="1557" height="178" key="GridCell.Tab.0.left" timestamp="1578762475324">
+    <state width="1557" height="178" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1578762557601" />
+    <state width="1557" height="178" key="GridCell.Tab.0.left" timestamp="1578762557601">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="178" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1578762475324" />
-    <state width="1557" height="178" key="GridCell.Tab.0.right" timestamp="1578762475324">
+    <state width="1557" height="178" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1578762557601" />
+    <state width="1557" height="178" key="GridCell.Tab.0.right" timestamp="1578762557601">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="178" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1578762475324" />
+    <state width="1557" height="178" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1578762557601" />
     <state x="213" y="87" key="SettingsEditor" timestamp="1576673205030">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

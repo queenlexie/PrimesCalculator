@@ -66,7 +66,6 @@ public class MillerRabinTest implements PrimalityTesting {
                 return true;
         }
 
-        // Return composite
         return false;
     }
 }
