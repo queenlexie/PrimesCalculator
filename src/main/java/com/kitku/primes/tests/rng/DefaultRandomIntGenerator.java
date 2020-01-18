@@ -14,4 +14,9 @@ public class DefaultRandomIntGenerator implements RandomIntGenerator {
     public int nextInt() {
         return random.nextInt();
     }
+
+    @Override
+    public int nextRangedClosedInt(int lower, int upper) {
+        return lower + (int)(Math.random()*(upper - lower + 1));
+    }
 }

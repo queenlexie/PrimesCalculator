@@ -15,7 +15,7 @@ public class AKSTest implements PrimalityTesting {
     // of (x - 1)^n - (x^n - 1) with the help
     // of Pascal's triangle .
     private static long[] coeffs(int n) {
-        long[] coeffs = new long[n];
+        long[] coeffs = new long[n+1];
         coeffs[0] = 1;
         for (int i = 0; i < n; coeffs[0] = -coeffs[0], i++) {
             coeffs[1 + i] = 1;
@@ -27,7 +27,7 @@ public class AKSTest implements PrimalityTesting {
         // are subtracting c[n] by 1 and adding
         // 1 in expression.
         coeffs[0]++;
-        coeffs[n-1]--;
+        coeffs[n]--;
         return coeffs;
     }
 }

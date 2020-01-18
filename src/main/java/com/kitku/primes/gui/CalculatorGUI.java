@@ -18,6 +18,7 @@ class CalculatorGUI extends JFrame implements ActionListener {
     public static int valueFermat;
     public static int valueSS;
     static JFrame f;
+    static JLabel labelTrails;
     static JLabel labelText;
     static JLabel labelHello;
     static JLabel labelMR;
@@ -31,7 +32,9 @@ class CalculatorGUI extends JFrame implements ActionListener {
     static JTextField lAKS;
     static JLabel spacer;
     int flag = 0;
-    RandomIntGenerator intGenerator = new DefaultRandomIntGenerator();
+    int numberOfTrials;
+    RandomIntGenerator intGenerator= new DefaultRandomIntGenerator();
+   //intGenerator=new RandomIntGenerator.copy(2,10);
     String s0;
     String s1, s2;
 
@@ -77,6 +80,7 @@ class CalculatorGUI extends JFrame implements ActionListener {
         labelFermat = new JLabel("Choose a number of iterations for this test:");
         labelSS = new JLabel("Choose a number of iterations for this test:");
         labelInstructions = new JLabel("Choosing higher value increases probability of correctness");
+        labelTrails = new JLabel("You passed no tests yet");
         //</editor-fold>
 
         //<editor-fold desc="spinners">
@@ -218,6 +222,8 @@ class CalculatorGUI extends JFrame implements ActionListener {
         p.add(pMR);
         p.add(new JSeparator());
         p.add(labelText);
+        p.add(new JSeparator(SwingConstants.HORIZONTAL));
+        p.add(labelTrails);
         //</editor-fold>
 
         //<editor-fold desc="Frame">
@@ -260,6 +266,7 @@ class CalculatorGUI extends JFrame implements ActionListener {
                 // set the value of text
                 l.setText(s0 + s1 + s2);
                 flag = 0;
+                numberOfTrials=0;
             } else if (whatWeGot.charAt(0) == 'C') {
                 s0 = s1 = s2 = "";
                 // set the value of text
@@ -274,6 +281,7 @@ class CalculatorGUI extends JFrame implements ActionListener {
                 s0 = s0.substring(0, s0.length() - 1);
                 l.setText(s0);
                 flag = 0;
+                numberOfTrials=0;
             }
 
             //String output;
@@ -282,6 +290,7 @@ class CalculatorGUI extends JFrame implements ActionListener {
             // store the value in 1st
             else if (whatWeGot.equals("Fermat Test")) {
                 b = new FermatTest(valueFermat, intGenerator).isPrime(Integer.parseInt(s0));
+                numberOfTrials++;
                 if (b) {
                     b = FermatPseudoPrimeTest.isPseudoPrime(Integer.parseInt(s0), valueFermat);
                     if (b) {
@@ -293,15 +302,14 @@ class CalculatorGUI extends JFrame implements ActionListener {
                         // p.revalidate();
                     }
 
-                } else {
+                } else
                     output = "Is Not a Prime Number";
-                    flag--;
-                }
                 lF.setText(output);
                 flagChecker(flag);
             } else if (whatWeGot.equals("Miller-Rabin Test")) {
 
                 b = new MillerRabinTest(valueMR, intGenerator).isPrime(Integer.parseInt(s0));
+                numberOfTrials++;
                 if (b) {
                     flag++;
                     output = "Is a Prime Number";
@@ -311,16 +319,19 @@ class CalculatorGUI extends JFrame implements ActionListener {
                 flagChecker(flag);
 
             } else if (whatWeGot.equals("Solovay-Strassen Test")) {
-                b = new SolovayStrassenTest(valueSS, intGenerator).isPrime(Integer.parseInt(s0));
+                b = new SolovayStrassenTest(Integer.parseInt(s0), intGenerator).isPrime(Integer.parseInt(s0));
+                numberOfTrials++;
                 if (b) {
                     output = "Is a Prime Number";
                     flag++;
                 } else
                     output = "Is Not a Prime Number";
+
                 lSS.setText(output);
                 flagChecker(flag);
-            } else {
+            } else if (whatWeGot.equals("AKS Test")){
                 b = new AKSTest().isPrime(Integer.parseInt(s0));
+                numberOfTrials++;
                 if (b) {
                     output = " Is a Prime Number";
                     flag++;
@@ -342,6 +353,8 @@ class CalculatorGUI extends JFrame implements ActionListener {
     }
 
     public void flagChecker(int flag) {
+
+        labelTrails.setText("You passed " + flag + " out of " + numberOfTrials + " trials");
         if (flag == 0)
             labelText.setText("Your number probably is a composite number");
         else if (flag == 1)
@@ -352,7 +365,9 @@ class CalculatorGUI extends JFrame implements ActionListener {
             labelText.setText("Your number probably is a prime number");
         else if (flag == 4)
             labelText.setText("Your number is a prime number");
-        else
-            labelText.setText("ERROR");
+        else if (flag >=5)
+            labelText.setText("Try again, number of trials is invalid");
+        else if(flag<0)
+            labelText.setText("Your number definitely is a composite number");
     }
 }

@@ -39,15 +39,15 @@ class Utils {
     public static int powerMod(int base, int exponent, int mod) {
         if(exponent == 0)
             return 1;
-        else {
+        else if (exponent == 1){
+            return base % mod;
+        } else {
             int normalizedBase = base % mod;
-            if (exponent == 1)
-                return normalizedBase;
-            else if (exponent % 2 == 1)
-                return normalizedBase * powerMod(normalizedBase, exponent - 1, mod) % mod;
+            if (exponent % 2 == 1)
+                return normalizedBase * (powerMod(normalizedBase, exponent - 1, mod) % mod) % mod;
             else {
                 int partialResult = powerMod(base, exponent / 2, mod);
-                return partialResult * partialResult % mod;
+                return (partialResult * partialResult) % mod;
             }
         }
     }
@@ -59,5 +59,6 @@ class Utils {
         // less than sqrt(n)
         return IntStream.rangeClosed(2, ((int)Math.sqrt(n))+1).anyMatch(i -> n % i == 0);
     }
+    public static int GCD(int a, int b) { return b==0 ? a : GCD(b, a%b); }
 
 }

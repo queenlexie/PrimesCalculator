@@ -4,7 +4,7 @@ import com.kitku.primes.tests.rng.RandomIntGenerator;
 
 import java.util.stream.Stream;
 
-import static com.kitku.primes.tests.Utils.*;
+import static com.kitku.primes.tests.Utils.powerMod;
 
 public class MillerRabinTest implements PrimalityTesting {
     // This function is called for all k trials.
@@ -18,7 +18,7 @@ public class MillerRabinTest implements PrimalityTesting {
 
     public MillerRabinTest(int trials, RandomIntGenerator rng){
         this.k = trials;
-        this.rng = rng;
+        this.rng= rng;
     }
 
     @Override
@@ -29,9 +29,8 @@ public class MillerRabinTest implements PrimalityTesting {
             return true;
         else {
             int d = findDFor(n);
-            return Stream.generate(()->rng.nextRangedClosedInt(2, n-2) % (n-4))
-                    .distinct()
-                    .limit(k)
+           return Stream.generate(()->rng.nextRangedClosedInt(2, n-2))
+                    .limit(Math.min(k, n))
                     .allMatch(a -> isTestSatisfied(a, d, n));
         }
     }

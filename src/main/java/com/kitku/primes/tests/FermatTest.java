@@ -28,10 +28,14 @@ public class FermatTest implements PrimalityTesting {
         else if (n <= 3)
             return true;
         else {
-            return Stream.generate(()->rng.nextRangedClosedInt(2, n-2) % (n-4))
-                    .distinct()
-                    .limit(k)
+            return Stream.generate(()->rng.nextRangedClosedInt(2, n-2))
+                    .limit(Math.min(k, n))
+                    .filter(a->Utils.GCD(n,a)==1)
                     .allMatch(a -> powerMod(a, n - 1, n) == 1);
+
+
+
         }
+
     }
 }
