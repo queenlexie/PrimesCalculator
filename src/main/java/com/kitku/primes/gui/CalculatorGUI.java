@@ -76,7 +76,7 @@ class CalculatorGUI extends JFrame implements ActionListener {
         //<editor-fold desc="labels">
         labelText = new JLabel("We do not know anything yet :)  ");
         labelHello = new JLabel("Provide a number to check its primality");
-        labelMR = new JLabel("Choose a random number between 2 and your number - 2:");
+        labelMR = new JLabel("Choose a number of iterations for this test:");
         labelFermat = new JLabel("Choose a number of iterations for this test:");
         labelSS = new JLabel("Choose a number of iterations for this test:");
         labelInstructions = new JLabel("Choosing higher value increases probability of correctness");
